@@ -1,32 +1,23 @@
 <header>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
-
 # GitHub Pages
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+https://suyanpython.github.io/blog/
 
 </header>
 
 
-## Finish
+## Run on local server Port 4000
+bundle exec jekyll serve
 
-_Congratulations friend, you've completed this course!_
+bundle exec jekyll serve --incremental
+_for no caches_
+
+
 
 <img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
 
-Your blog is now live and has been deployed!
 
-Here's a recap of all the tasks you've accomplished in your repository:
-
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
 - You created your first blog post with Jekyll!
 
 ### What's next?
