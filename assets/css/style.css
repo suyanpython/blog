@@ -25,4 +25,20 @@
   #results {
     margin-top: 30px;
   }
-  
+
+  /* Custom Wine Colors */
+.bg-wine-600 {
+  background-color: #800020; /* Dark wine color */
+}
+
+.bg-wine-700 {
+  background-color: #6b001a; /* Deeper dark wine shade */
+}
+
+.text-wine-600 {
+  color: #800020; /* Dark wine text color */
+}
+
+.text-wine-700 {
+  color: #6b001a; /* Deeper wine text color */
+}

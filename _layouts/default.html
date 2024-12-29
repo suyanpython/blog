@@ -4,31 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="{{ './assets/css/style.css' | relative_url }}">
-    <script src="{{ './assets/js/calculator.js' | relative_url }}" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="{{ './assets/css/style.css' | relative_url }}">
+  <script src="{{ './assets/js/calculator.js' | relative_url }}" defer></script>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
 
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <!-- Your navigation links here -->
-    </nav>
+  <!-- Header -->
+  <header class="bg-wine-600 py-6">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-white text-4xl font-semibold text-center">{{ site.title }}</h1>
+    </div>
   </header>
 
-  <main>
-    {{ content }} <!-- This renders the content of the page -->
+  <!-- Navigation -->
+  <nav class="bg-wine-700 py-4">
+    <div class="max-w-6xl mx-auto px-4">
+      <ul class="flex justify-center space-x-8">
+        <li><a href="/" class="text-white hover:text-gray-200">Home</a></li>
+        <li><a href="/about" class="text-white hover:text-gray-200">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      {{ content }}
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }}</p>
+  <!-- Footer -->
+  <footer class="py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">&copy; {{ site.time | date: "%Y" }} by Suyan</p>
+    </div>
   </footer>
 
 </body>
 </html>
-
-
-
-  
